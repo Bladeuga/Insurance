@@ -8,8 +8,7 @@
       "npm": "6.13.4"
     },
     "scripts": {
-      "emailspecs": "node specs/email.spec.js",
-      "firstnamespecs": "node specs/firstname.spec.js"
+      "specs": "node specs.js"
     },
     "repository": {
       "type": "git",
