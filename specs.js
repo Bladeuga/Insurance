@@ -8,3 +8,8 @@ for(const prop in fullNameSpecs){
     const func = fullNameSpecs[prop];
     func();
 };
+const idNumberSpecs = require("./specs/idnumber.spec.js");
+for(const prop in idNumberSpecs){
+    const func = idNumberSpecs[prop];
+    func();
+};

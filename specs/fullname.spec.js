@@ -157,7 +157,7 @@ module.exports = {
         //arrange
         let failed = true;
         let errors = "";
-        let fullnameValidation = new FullNameValidation("Harry","Potter","Mr");
+        let fullnameValidation = new FullNameValidation("Harry","Potter","apache helicopter");
 
         //act
         try {
