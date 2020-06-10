@@ -13,9 +13,3 @@ for(const prop in idNumberValidationSpecs){
     const func = idNumberValidationSpecs[prop];
     func();
 };
-const fullNameSpecs = require("./specs/fullname.spec.js");
-for(const prop in fullNameSpecs){
-    const func = fullNameSpecs[prop];
-    func();
-};
-
