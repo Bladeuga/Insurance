@@ -13,3 +13,8 @@ for(const prop in idNumberValidationSpecs){
     const func = idNumberValidationSpecs[prop];
     func();
 };
+const phoneNumberValidationSpecs = require("./specs/phonenumbervalidation.spec.js");
+for(const prop in phoneNumberValidationSpecs){
+    const func = phoneNumberValidationSpecs[prop];
+    func();
+};
