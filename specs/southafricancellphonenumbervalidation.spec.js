@@ -38,5 +38,17 @@ module.exports = {
         let phoneNumberValidation = new SouthAfricanPhoneNumberValidation("+2707952423200");
         //act & //assert
         assertions.AssertFailingSpec(phoneNumberValidation.isValid);
+    },
+    when_asking_a_south_african_client_for_their_cellphone_number_given_on_site_and_the_starting_number_is_MTN_0603_it_should_pass: () => {
+          //arrange
+          let phoneNumberValidation = new SouthAfricanPhoneNumberValidation(603242320);
+          //act & //assert
+          assertions.AssertPassingSpec(phoneNumberValidation.isCellPhoneNumber);
+    },
+    when_asking_a_south_african_client_for_their_landphone_number_given_on_site_and_the_starting_number_is_Vodacom_0606_it_should_pass: () => {
+           //arrange
+           let phoneNumberValidation = new SouthAfricanPhoneNumberValidation(606242320);
+           //act & //assert
+           assertions.AssertPassingSpec(phoneNumberValidation.isCellPhoneNumber);
     }
 }

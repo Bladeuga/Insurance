@@ -1,4 +1,5 @@
 const SouthAfricanPhoneNumberValidation = require("../lib/southafricanphonenumbervalidation.js");
+const SouthAfricanPhoneNumberProvinceValidation = require("../lib/southafricanphonenumberprovincevalidation.js");
 const assertions = require("../lib/assertions.js");
 
 module.exports = {
@@ -38,5 +39,33 @@ module.exports = {
         let phoneNumberValidation = new SouthAfricanPhoneNumberValidation("+2703152423201");
         //act & //assert
         assertions.AssertFailingSpec(phoneNumberValidation.isValid);
+    },
+    when_asking_a_south_african_client_for_their_landphone_number_given_on_site_and_the_starting_number_is_031_and_the_province_is_durban_it_should_pass: () => {
+        //arrange
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,"Durban");
+
+        //act & //assert
+        assertions.AssertPassingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
+    },
+    when_asking_a_south_african_client_for_their_landphone_number_given_on_site_and_the_starting_number_is_031_and_the_province_is_capetown_it_should_fail: () => {
+        //arrange
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,"Cape Town");
+
+        //act & //assert
+        assertions.AssertFailingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
+    },
+    when_asking_a_south_african_client_for_their_landphone_number_given_on_site_and_the_starting_number_is_021_and_the_province_is_capetown_it_should_pass: () => {
+        //arrange
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(215242320,"Cape Town");
+
+        //act & //assert
+        assertions.AssertPassingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
+    },
+    when_asking_a_south_african_client_for_their_landphone_number_given_on_site_and_the_starting_number_is_021_and_the_province_is_durban_it_should_fail: () => {
+        //arrange
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(215242320, "Durban");
+
+        //act & //assert
+        assertions.AssertFailingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
     }
 }
