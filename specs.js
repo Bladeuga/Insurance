@@ -8,22 +8,22 @@ for(const prop in fullNameValidationSpecs){
     const func = fullNameValidationSpecs[prop];
     func();
 };
-const idNumberValidationSpecs = require("./specs/idnumbervalidation.spec.js");
-for(const prop in idNumberValidationSpecs){
-    const func = idNumberValidationSpecs[prop];
+const southAfricanIdNumberValidationSpecs = require("./specs/southafricanidnumbervalidation.spec.js");
+for(const prop in southAfricanIdNumberValidationSpecs){
+    const func = southAfricanIdNumberValidationSpecs[prop];
     func();
 };
-const landPhoneNumberValidationSpecs = require("./specs/landphonenumbervalidation.spec.js");
-for(const prop in landPhoneNumberValidationSpecs){
-    const func = landPhoneNumberValidationSpecs[prop];
+const southAfricanLandPhoneNumberValidationSpecs = require("./specs/southafricanlandphonenumbervalidation.spec.js");
+for(const prop in southAfricanLandPhoneNumberValidationSpecs){
+    const func = southAfricanLandPhoneNumberValidationSpecs[prop];
     func();
 };
-const cellphoneNumberValidationSpecs = require("./specs/cellphonenumbervalidation.spec.js");
+const cellphoneNumberValidationSpecs = require("./specs/southafricancellphonenumbervalidation.spec.js");
 for(const prop in cellphoneNumberValidationSpecs){
     const func = cellphoneNumberValidationSpecs[prop];
     func();
 };
-const phoneNumberValidationSpecs = require("./specs/phonenumbervalidation.spec.js");
+const phoneNumberValidationSpecs = require("./specs/southafricanphonenumbervalidation.spec.js");
 for(const prop in phoneNumberValidationSpecs){
     const func = phoneNumberValidationSpecs[prop];
     func();
