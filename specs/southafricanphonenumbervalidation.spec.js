@@ -14,7 +14,7 @@ module.exports = {
     when_asking_a_south_african_client_for_a_valid_landphone_number_given_on_site_it_should_check_if_the_number_is_a_KZN_land_number: () =>{
           //arrange
           let landPhoneNumbers = require("./landphonenumberprovince.json");
-          let province = "Kwa-zulu Natal"
+          let province = "Kwa-Zulu Natal"
           let phoneNumberValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,province,landPhoneNumbers);
           //act & //assert
           assertions.AssertPassingSpec(phoneNumberValidation.isValid);
@@ -23,7 +23,7 @@ module.exports = {
           //arrange
           let cellPhoneNumbers = require("./cellphonenumberprovider.json");
           let provider = "MTN"
-          let phoneNumberValidation = new SouthAfricanPhoneNumberProviderValidation(603242320,provider,cellPhoneNumbers);
+          let phoneNumberValidation = new SouthAfricanPhoneNumberProviderValidation(313242320,provider,cellPhoneNumbers);
           //act & //assert
           assertions.AssertFailingSpec(phoneNumberValidation.isValid);
     },
@@ -31,7 +31,7 @@ module.exports = {
           //arrange
           let landPhoneNumbers = require("./landphonenumberprovince.json");
           let province = "Kwa-Zulu Natal"
-          let phoneNumberValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,province,landPhoneNumbers);
+          let phoneNumberValidation = new SouthAfricanPhoneNumberProvinceValidation(605242320,province,landPhoneNumbers);
           //act & //assert
           assertions.AssertFailingSpec(phoneNumberValidation.isValid);
     },

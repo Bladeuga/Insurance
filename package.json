@@ -1,24 +1,24 @@
 {
-    "name": "vehicle.insurance.customer.contact",
-    "version": "1.0.0",
-    "description": "",
-    "main": "vehicle.insurance.customer.contact.js",
-    "engines": {
-      "node": "12.16.1",
-      "npm": "6.13.4"
-    },
-    "scripts": {
-      "specs": "node specs.js"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/bladeuga/vehicle.insurance.customer.contact.git"
-    },
-    "author": "Marchuan Van Der Merwe",
-    "license": "ISC",
-    "bugs": {
-      "url": "https://github.com/bladeuga/vehicle.insurance.customer.contact/issues"
-    },
-    "homepage": "https://github.com/bladeuga/vehicle.insurance.customer.contact#readme",
-    "dependencies": {}
+  "name": "vehicle.insurance.customer.contact",
+  "version": "1.0.0",
+  "description": "",
+  "main": "vehicle.insurance.customer.contact.js",
+  "engines": {
+    "node": "12.16.1",
+    "npm": "6.13.4"
+  },
+  "scripts": {
+    "specs": "node specs.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bladeuga/vehicle.insurance.customer.contact.git"
+  },
+  "author": "Marchuan Van Der Merwe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bladeuga/vehicle.insurance.customer.contact/issues"
+  },
+  "homepage": "https://github.com/bladeuga/vehicle.insurance.customer.contact#readme",
+  "dependencies": {}
 }

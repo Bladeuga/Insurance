@@ -53,17 +53,17 @@ module.exports = {
         //act & //assert
         assertions.AssertPassingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
     },
-    when_asking_a_south_african_client_for_a_invalid_landphone_number_given_on_site_and_the_starting_number_is_031_and_the_province_is_capetown_it_should_fail: () => {
+    when_asking_a_south_african_client_for_a_invalid_landphone_number_given_on_site_and_the_starting_number_is_031_and_the_province_is_Western_Cape_it_should_fail: () => {
         //arrange
         let landPhoneNumbers = require("./landphonenumberprovince.json");
-        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,"Cape Town",landPhoneNumbers);
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(315242320,"Western Cape",landPhoneNumbers);
         //act & //assert
         assertions.AssertFailingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
     },
-    when_asking_a_south_african_client_for_a_valid_landphone_number_given_on_site_and_the_starting_number_is_021_and_the_province_is_capetown_it_should_pass: () => {
+    when_asking_a_south_african_client_for_a_valid_landphone_number_given_on_site_and_the_starting_number_is_021_and_the_province_is_Western_Cape_it_should_pass: () => {
         //arrange
         let landPhoneNumbers = require("./landphonenumberprovince.json");
-        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(215242320,"Cape Town",landPhoneNumbers);
+        let southAfricanPhoneNumberProvinceValidation = new SouthAfricanPhoneNumberProvinceValidation(215242320,"Western Cape",landPhoneNumbers);
         //act & //assert
         assertions.AssertPassingSpec(southAfricanPhoneNumberProvinceValidation.isValid);
     },

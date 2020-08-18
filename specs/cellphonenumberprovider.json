@@ -1,3 +1,12 @@
 [{
-    "name":"MTN", "code": "06", "areacode":"03"
+    "name":"MTN", "code": "06"
+},
+{
+    "name":"Vodacom", "code": "07"
+},
+{
+    "name":"Vodacom", "code": "06"
+},
+{
+    "name":"MTN", "code": "07"
 }]

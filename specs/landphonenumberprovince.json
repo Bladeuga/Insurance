@@ -1,3 +1,6 @@
 [{
     "name": "Kwa-Zulu Natal", "code":"03", "areacode":"1", "areaname":"Durban"
+},
+{
+    "name": "Western Cape", "code":"02", "areacode":"1", "areaname":"Cape Town"
 }]
