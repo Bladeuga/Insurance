@@ -1,5 +1,5 @@
 
-const FullNameValidation = require("../lib/FullnameValidation.js");
+const FullNameValidation = require("../lib/fullnamevalidation.js");
 const assertions = require("../lib/assertions.js");
 
 module.exports = {
