@@ -8,7 +8,7 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "specs": "node specs.js"
+    "tests": "node specs.js"
   },
   "repository": {
     "type": "git",
